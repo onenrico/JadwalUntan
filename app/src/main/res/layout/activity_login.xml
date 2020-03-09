@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_login"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B2000000"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/book" />
+
+    <TextView
+        android:id="@+id/login_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/cresta"
+        android:text="SIlahkan login menggunakan NIM dan Password SIAKAD"
+        android:textColor="@color/fontColor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/inp_nim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_shape"
+        android:ems="10"
+        android:hint="NIM"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:paddingStart="45dp"
+        android:textColor="@color/fontColor"
+        android:textColorHint="#88FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/reveal_password"
+        app:layout_constraintStart_toStartOf="@+id/login_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/login_subtitle" />
+
+    <EditText
+        android:id="@+id/inp_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_shape"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:paddingStart="45dp"
+        android:textColor="@color/fontColor"
+        android:textColorHint="#88FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/reveal_password"
+        app:layout_constraintStart_toStartOf="@+id/inp_nim"
+        app:layout_constraintTop_toBottomOf="@+id/inp_nim" />
+
+    <ImageView
+        android:id="@+id/reveal_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:focusable="false"
+        android:tint="@color/coolGray"
+        app:layout_constraintBottom_toBottomOf="@+id/inp_password"
+        app:layout_constraintEnd_toEndOf="@+id/login_subtitle"
+        app:layout_constraintTop_toTopOf="@+id/inp_password"
+        app:srcCompat="@drawable/ic_eye" />
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_shape"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/fontColor"
+        app:layout_constraintEnd_toEndOf="@+id/reveal_password"
+        app:layout_constraintStart_toStartOf="@+id/inp_password"
+        app:layout_constraintTop_toBottomOf="@+id/inp_password" />
+
+    <TextView
+        android:id="@+id/login_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/cresta_medium"
+        android:text="NIM atau Password salah !"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/inp_nim_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inp_nim"
+        app:layout_constraintStart_toStartOf="@+id/inp_nim"
+        app:layout_constraintTop_toTopOf="@+id/inp_nim"
+        app:srcCompat="@drawable/ic_person" />
+
+    <ImageView
+        android:id="@+id/inp_password_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inp_password"
+        app:layout_constraintStart_toStartOf="@+id/inp_password"
+        app:layout_constraintTop_toTopOf="@+id/inp_password"
+        app:srcCompat="@drawable/ic_lock" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

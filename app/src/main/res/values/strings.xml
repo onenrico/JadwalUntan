@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JadwalUntan</string>
+    <string name="login_salah">NIM/Password Salah !</string>
+    <string name="login_error">Server Error, Coba Login Kembali...</string>
+    <string name="nim_salah">NIM harus diisi dengan benar !</string>
+    <string name="password_salah">Password harus diisi !</string>
+    <string name="today_text">Hari Ini</string>
+</resources>

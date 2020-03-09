@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/jadwal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/cresta_medium"
+        android:paddingBottom="8dp"
+        android:text="Nama makul"
+        android:textColor="@color/fontColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/jadwal_time"
+        app:layout_constraintTop_toBottomOf="@+id/jadwal_time" />
+
+    <TextView
+        android:id="@+id/jadwal_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/main_rounded"
+        android:fontFamily="sans-serif"
+        android:text="Hari, Jam:Menit"
+        android:textColor="@color/fontColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/line_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jadwal_ruangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/secondary_rounded"
+        android:fontFamily="sans-serif"
+        android:text="Ruangan"
+        android:textColor="@color/fontColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/jadwal_time"
+        app:layout_constraintStart_toEndOf="@+id/jadwal_time"
+        app:layout_constraintTop_toTopOf="@+id/jadwal_time" />
+
+    <ImageView
+        android:id="@+id/line_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/dot_indicator"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/placeholder_middle"
+        app:layout_constraintEnd_toEndOf="@+id/line_image"
+        app:layout_constraintStart_toStartOf="@+id/line_image"
+        app:srcCompat="@drawable/ring" />
+
+    <TextView
+        android:id="@+id/time_estimate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="10 min"
+        android:textAlignment="center"
+        android:textColor="@color/fontColor"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/line_image"
+        app:layout_constraintStart_toStartOf="@+id/line_image"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_middle" />
+
+    <TextView
+        android:id="@+id/placeholder_middle"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/jadwal_name"
+        app:layout_constraintEnd_toEndOf="@+id/line_image"
+        app:layout_constraintStart_toStartOf="@+id/line_image"
+        app:layout_constraintTop_toTopOf="@+id/jadwal_time"
+        app:layout_constraintVertical_bias="0.49" />
+</androidx.constraintlayout.widget.ConstraintLayout>

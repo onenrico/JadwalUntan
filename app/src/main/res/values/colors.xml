@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a8cf</color>
+    <color name="colorPrimaryDark">#0181ae</color>
+    <color name="colorAccent">#32b1d2</color>
+    <color name="fontColor">#faf7ff</color>
+    <color name="iconColor">#0a95c0</color>
+    <color name="darkColor">#0284a6</color>
+    <color name="coolGray">#FFFFFF</color>
+    <color name="blackFont">#4d4d6d</color>
+    <color name="rounded1">#32a6cb</color>
+    <color name="rounded2">#0082a6</color>
+</resources>
